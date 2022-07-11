@@ -1,0 +1,3 @@
+writeLog = ()=>{
+console.log(arguments);
+}

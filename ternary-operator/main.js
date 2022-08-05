@@ -1,4 +1,9 @@
-//REF: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+/**
+ * REF: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+ * @type {number}
+ * @private
+ */
 const _dayName= new Date().getDay();
 let day = '';
 switch (_dayName) {

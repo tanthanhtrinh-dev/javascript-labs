@@ -7,7 +7,7 @@
 const basicFor = ()=>{
 
     let languages = ['javascript','php','ruby'];
-
+    console.log(`${ typeof languages.length}`)
     languages.forEach((item, index)=>{
         console.log(`item: ${item}::Index: ${index}`);
     });

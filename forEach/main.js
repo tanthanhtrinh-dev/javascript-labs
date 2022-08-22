@@ -5,14 +5,30 @@
 
 
 const basicFor = ()=>{
-
     let languages = ['javascript','php','ruby'];
     console.log(`${ typeof languages.length}`)
     languages.forEach((item, index)=>{
         console.log(`item: ${item}::Index: ${index}`);
     });
-
 };
 
+const asyncFor = async ()=>{
 
-basicFor();
+    let languages = ['javascript','php','ruby'];
+    let index = 0;
+
+    for await (const item of languages) {
+        console.log(`item: ${item}::Index: ${index}`);
+        index++;
+    }
+
+    return index;
+    // languages.forEach((item, index)=>{
+    //     console.log(`item: ${item}::Index: ${index}`);
+    // });
+};
+
+asyncFor().then((val)=>{
+    console.log(`Xong roi: ${val}`);
+});
+//basicFor();

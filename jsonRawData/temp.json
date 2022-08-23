@@ -1,0 +1,112 @@
+{
+  "Functional": "OrderService.taskSchedulerSyncOrder",
+  "breakPoint": "start request order item S-MSO20001007 - 1 FCD1F4E1-1A1A-4B03-BFC9-5BBA1C0B4678",
+  "inputData": {
+    "ShopifyOrderRequest": {
+      "Billing": {
+        "Address1": "9 Elisa Ave",
+        "Address2": "",
+        "Attention": "John Pearce",
+        "CompanyName": "",
+        "Country": "Australia",
+        "Email": "kingjohn03@msn.com",
+        "Fax": "",
+        "FirstName": "John",
+        "LastName": "Pearce",
+        "Mobile": "",
+        "Phone": "+61416323781",
+        "Postcode": "4880",
+        "State": "Queensland",
+        "Suburb": "MAREEBA (QLD)"
+      },
+      "Contact": {
+        "Address1": "9 Elisa Ave",
+        "Address2": "",
+        "Attention": "John Pearce",
+        "CompanyName": "",
+        "Country": "Australia",
+        "Email": "kingjohn03@msn.com",
+        "FirstName": "John",
+        "LastName": "Pearce",
+        "Phone": "+61416323781",
+        "Postcode": "4880",
+        "State": "Queensland",
+        "Suburb": "MAREEBA (QLD)"
+      },
+      "Created": "2022-08-21T17:10:44+10:00",
+      "Currency": "AUD",
+      "Delivery": {
+        "Address1": "9 Elisa Ave",
+        "Address2": "",
+        "CompanyName": "",
+        "Country": "Australia",
+        "Email": "kingjohn03@msn.com",
+        "Fax": "",
+        "FirstName": "John",
+        "LastName": "Pearce",
+        "Mobile": "",
+        "Phone": "+61416323781",
+        "Postcode": "4880",
+        "State": "Queensland",
+        "Suburb": "MAREEBA (QLD)"
+      },
+      "DiscountAmount": 55.90909090909091,
+      "DiscountTax": 5.5909090909090935,
+      "DiscountTaxRate": 10,
+      "ExchangeRate": 1,
+      "FreightFee": 9,
+      "FreightTax": 0.9000000000000004,
+      "FreightTaxRate": 10,
+      "IsTest": false,
+      "Orderdetails": [
+        {
+          "InternalCode": "P000236566",
+          "IsFF_Item": false,
+          "Name": "Boost Mobile Racing Team Cap",
+          "Price": 31.818181818181817,
+          "PriceInTax": "35.00",
+          "ProType": 1,
+          "Qty": 1,
+          "Tax": 3.1818181818181834
+        },
+        {
+          "InternalCode": "P000225546",
+          "IsFF_Item": false,
+          "Name": "Holden Born To Race Lion Plush",
+          "Price": 27.27272727272727,
+          "PriceInTax": "30.00",
+          "ProType": 1,
+          "Qty": 1,
+          "Tax": 2.72727272727273
+        },
+        {
+          "InternalCode": "P000239856",
+          "IsFF_Item": false,
+          "Name": "Monster Energy Lanyard",
+          "Price": 9.09090909090909,
+          "PriceInTax": "10.00",
+          "ProType": 1,
+          "Qty": 1,
+          "Tax": 0.9090909090909101
+        }
+      ],
+      "PONumber": "S-MSO20001007",
+      "PaymentTransaction": {
+        "Amount": 23.4,
+        "Created": "2022-08-21T17:10:42+10:00",
+        "Currency": "AUD",
+        "Paid": true,
+        "PayDate": "2022-08-21T17:10:42+10:00",
+        "PaymentType": "Afterpay (New)",
+        "ResponseCode": "08",
+        "ResponseText": null,
+        "TxnReference": "ngRakBCvy0rIbCKvIAZoTDTlF"
+      },
+      "PaymentType": "Afterpay (New)",
+      "ShippingType": "Standard",
+      "Status": "PAID",
+      "Txnref": "ngRakBCvy0rIbCKvIAZoTDTlF"
+    },
+    "StoreToken": "FCD1F4E1-1A1A-4B03-BFC9-5BBA1C0B4678"
+  }
+}

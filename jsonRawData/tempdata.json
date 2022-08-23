@@ -1,0 +1,60 @@
+{
+  "itemVal": [
+    {
+      "admin_graphql_api_id": "gid://shopify/OrderTransaction/5777863704740",
+      "amount": "330.40",
+      "authorization": "53433",
+      "created_at": "2022-07-25T18:37:21+10:00",
+      "currency": "AUD",
+      "device_id": null,
+      "error_code": null,
+      "gateway": "bogus",
+      "id": 5777863704740,
+      "kind": "sale",
+      "location_id": null,
+      "message": "Bogus Gateway: Forced success",
+      "order_id": 4692995637412,
+      "parent_id": null,
+      "payment_details": {
+        "avs_result_code": null,
+        "credit_card_bin": "1",
+        "credit_card_company": "Bogus",
+        "credit_card_number": "•••• •••• •••• 1",
+        "cvv_result_code": null
+      },
+      "processed_at": "2022-07-25T18:37:21+10:00",
+      "receipt": { "paid_amount": "330.40" },
+      "session": {
+        "accessToken": "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",
+        "expires": "2022-08-23T06:17:40.666Z",
+        "id": "motorsportoutlet-tpf.myshopify.com_80205643940",
+        "isOnline": true,
+        "onlineAccessInfo": {
+          "account_number": 0,
+          "associated_user": {
+            "account_owner": false,
+            "collaborator": false,
+            "email": "tantrinh@tpfgroup.cc",
+            "email_verified": true,
+            "first_name": "Tan",
+            "id": 80205643940,
+            "last_name": "Trinh",
+            "locale": "en"
+          },
+          "associated_user_scope": "write_products,write_customers,write_draft_orders,write_inventory,read_locations,read_translations,write_orders,write_order_edits,write_assigned_fulfillment_orders,write_third_party_fulfillment_orders,write_fulfillments",
+          "expires_in": 86398,
+          "session": "f2c0075f6a316d77ff1cf2c266b3983f76eb70fc7678c2826dd628e8d7e87574"
+        },
+        "scope": "write_products,write_customers,write_draft_orders,write_inventory,read_locations,read_translations,write_orders,write_order_edits,write_assigned_fulfillment_orders,write_third_party_fulfillment_orders,write_fulfillments",
+        "shop": "motorsportoutlet-tpf.myshopify.com",
+        "state": "056809375006577"
+      },
+      "source_name": "shopify_draft_order",
+      "status": "success",
+      "test": true,
+      "user_id": null
+    }
+  ],
+  "level": "info",
+  "message": "Get Transaction detail:: "
+}

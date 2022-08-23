@@ -1,0 +1,102 @@
+{
+  "Functional": "OrderService.taskSchedulerSyncOrder",
+  "breakPoint": "start request order item S-MSO20001008 - 0 FCD1F4E1-1A1A-4B03-BFC9-5BBA1C0B4678",
+  "inputData": {
+    "ShopifyOrderRequest": {
+      "Billing": {
+        "Address1": "20 Post Office Street",
+        "Address2": "",
+        "Attention": "Mervyn Prasad",
+        "CompanyName": "",
+        "Country": "Australia",
+        "Email": "mervyn.prasad@outlook.com",
+        "Fax": "",
+        "FirstName": "Mervyn",
+        "LastName": "Prasad",
+        "Mobile": "",
+        "Phone": "0499 944 900",
+        "Postcode": "2118",
+        "State": "New South Wales",
+        "Suburb": "Carlingford"
+      },
+      "Contact": {
+        "Address1": "20 Post Office Street",
+        "Address2": "",
+        "Attention": "Mervyn Prasad",
+        "CompanyName": "",
+        "Country": "Australia",
+        "Email": "mervyn.prasad@outlook.com",
+        "FirstName": "Mervyn",
+        "LastName": "Prasad",
+        "Phone": "0499 944 900",
+        "Postcode": "2118",
+        "State": "New South Wales",
+        "Suburb": "Carlingford"
+      },
+      "Created": "2022-08-21T23:52:57+10:00",
+      "Currency": "AUD",
+      "Delivery": {
+        "Address1": "20 Post Office Street",
+        "Address2": "",
+        "CompanyName": "",
+        "Country": "Australia",
+        "Email": "mervyn.prasad@outlook.com",
+        "Fax": "",
+        "FirstName": "Mervyn",
+        "LastName": "Prasad",
+        "Mobile": "",
+        "Phone": "0499 944 900",
+        "Postcode": "2118",
+        "State": "New South Wales",
+        "Suburb": "Carlingford"
+      },
+      "DiscountAmount": 55.90909090909091,
+      "DiscountTax": 5.5909090909090935,
+      "DiscountTaxRate": 10,
+      "ExchangeRate": 1,
+      "FreightFee": 9,
+      "FreightTax": 0.9000000000000004,
+      "FreightTaxRate": 10,
+      "IsTest": false,
+      "Orderdetails": [
+        {
+          "InternalCode": "P000225546",
+          "IsFF_Item": false,
+          "Name": "Holden Born To Race Lion Plush",
+          "Price": 27.27272727272727,
+          "PriceInTax": "30.00",
+          "ProType": 1,
+          "Qty": 1,
+          "Tax": 2.72727272727273
+        },
+        {
+          "InternalCode": "P000239914",
+          "IsFF_Item": false,
+          "Name": "Monster Energy Umbrella",
+          "Price": 40.90909090909091,
+          "PriceInTax": "45.00",
+          "ProType": 1,
+          "Qty": 1,
+          "Tax": 4.0909090909090935
+        }
+      ],
+      "PONumber": "S-MSO20001008",
+      "PaymentTransaction": {
+        "Amount": 23.4,
+        "Created": "2022-08-21T23:52:55+10:00",
+        "Currency": "AUD",
+        "Paid": true,
+        "PayDate": "2022-08-21T23:52:55+10:00",
+        "PaymentType": "Afterpay (New)",
+        "ResponseCode": "08",
+        "ResponseText": null,
+        "TxnReference": "nl8JJBpn5cxZM8zcjJqTjChDn"
+      },
+      "PaymentType": "Afterpay (New)",
+      "ShippingType": "Standard",
+      "Status": "PAID",
+      "Txnref": "nl8JJBpn5cxZM8zcjJqTjChDn"
+    },
+    "StoreToken": "FCD1F4E1-1A1A-4B03-BFC9-5BBA1C0B4678"
+  }
+}

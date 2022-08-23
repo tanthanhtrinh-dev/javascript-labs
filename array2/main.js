@@ -32,37 +32,7 @@ const exampleFilter = () => {
     console.log(result);
 }
 
-const exampleReduce = () => {
-    const array1 = [1, 2, 3, 4];
 
-    // function sumItem(previousValue, currentValue){
-    //     return previousValue + currentValue;
-    // }
-    const sumItem = (previousValue, currentValue, currentIndex, array) => {
-
-        const total = previousValue + currentValue;
-
-        console.table({
-            'Step': currentIndex,
-            'accumulator': previousValue,
-            'value': currentValue,
-            'Calculated': total,
-        });
-
-        return total;
-    };
-
-    // 0 + 1 + 2 + 3 + 4
-    const initialValue = 0;
-    const sumWithInitial = array1.reduce(
-        sumItem,
-        initialValue
-    );
-    console.log(sumWithInitial);
-// expected output: 10
-}
-
-exampleReduce();
 
 //exampleEvery();
 //exampleSome();

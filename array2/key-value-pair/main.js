@@ -36,11 +36,50 @@ const arrProperties = [
     }
 ];
 
-const GetMemberFirstName = (items)=>{
+const GetMemberFirstName = (items) => {
 
-    let mFirstName = items.find(f=>f.name === 'First Name');
-    console.log(mFirstName.value);
+    let mFirstName = items.find(f=>f.name === 'MembershipData_FirstName');
+    if(mFirstName && mFirstName.value.length>0){
+        console.log(mFirstName.value.length);
+        console.log(mFirstName.value);
+        console.log(mFirstName.value.trim().length);
+    }
 
+    let mLastName = items.find(f=>f.name === 'MembershipData_LastName');
+    if(mFirstName && mFirstName.value.length>0){
+        console.log(mLastName.value.length);
+        console.log(mLastName.value);
+        console.log(mLastName.value.trim().length);
+    }
 }
 
-GetMemberFirstName(arrProperties);
+const GetMemberData = (items) => {
+
+    let membershipData = {};
+
+    let mFirstName = items.find(f=>f.name === 'MembershipData_FirstName');
+    if(mFirstName && mFirstName.value.length>0){
+        // console.log(mFirstName.value.length);
+        // console.log(mFirstName.value);
+        // console.log(mFirstName.value.trim().length);
+        membershipData.Fname = mFirstName.value.trim();
+    }
+
+    let mLastName = items.find(f=>f.name === 'MembershipData_LastName');
+    if(mLastName && mLastName.value.length>0){
+        // console.log(mLastName.value.length);
+        // console.log(mLastName.value);
+        // console.log(mLastName.value.trim().length);
+        membershipData.Lname = mLastName.value.trim();
+    }
+
+    return membershipData;
+}
+const checkMemberShipData = (items) => {
+  const membershipData=GetMemberData(items);
+  console.log(membershipData.hasOwnProperty("Fname"));
+}
+
+//GetMemberFirstName(arrProperties);
+//GetMemberData(arrProperties);
+checkMemberShipData(arrProperties);

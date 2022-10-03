@@ -37,3 +37,4 @@ const exampleFilter = () => {
 //exampleEvery();
 //exampleSome();
 //exampleFilter();
+//exampleFind();

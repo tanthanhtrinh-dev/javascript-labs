@@ -11,15 +11,15 @@ const arrProperties = [
         "value" : "Handling fee + $4.95"
     },
     {
-        "name" : "First Name",
+        "name" : "MembershipData_FirstName",
         "value" : "Min"
     },
     {
-        "name" : "Last Name",
+        "name" : "MembershipData_LastName",
         "value" : "Nguyen"
     },
     {
-        "name" : "WH_code",
+        "name" : "WH_Code",
         "value" : "ST8M822-P-003"
     },
     {

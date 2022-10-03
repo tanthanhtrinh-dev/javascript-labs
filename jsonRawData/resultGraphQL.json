@@ -1,0 +1,31 @@
+{
+  "breakPoint": "start orderGraphQl.GetOrdersByNonTPFProcessingTag",
+  "level": "info",
+  "message": "taskSchedulerGetShopifyOrders",
+  "ordersGraphQL": {
+    "body": {
+      "data": {
+        "orders": {
+          "nodes": [
+            {
+              "id": "gid://shopify/Order/4698398916772",
+              "name": "S-MSO100001018"
+            }
+          ]
+        }
+      },
+      "extensions": {
+        "cost": {
+          "actualQueryCost": 3,
+          "requestedQueryCost": 3,
+          "throttleStatus": {
+            "currentlyAvailable": 997,
+            "maximumAvailable": 1000,
+            "restoreRate": 50
+          }
+        }
+      }
+    },
+    "headers": {}
+  }
+}

@@ -1,112 +1,59 @@
 {
-  "Functional": "OrderService.taskSchedulerSyncOrder",
-  "breakPoint": "start request order item S-MSO20001007 - 1 FCD1F4E1-1A1A-4B03-BFC9-5BBA1C0B4678",
+  "BreakPoint": "client.query",
+  "Error": {
+    "response": {
+      "body": { "errors": { "variables": "expected String to be a Hash" } },
+      "code": 400,
+      "headers": {
+        "alt-svc": ["h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"],
+        "cf-cache-status": ["DYNAMIC"],
+        "cf-ray": ["7423bd297a426ffe-IAD"],
+        "connection": ["close"],
+        "content-language": ["en"],
+        "content-security-policy": [
+          "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; frame-ancestors 'none'; img-src 'self' data: blob: https:; script-src https://cdn.shopify.com https://cdn.shopifycdn.net https://checkout.shopifycs.com https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://js.braintreegateway.com https://c.paypal.com https://maps.googleapis.com https://www.google-analytics.com https://v.shopify.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=query&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Fgraphql&source%5Bsection%5D=admin_api&source%5Buuid%5D=ee801d25-1616-4003-8666-f6dba7e6fbd5"
+        ],
+        "content-type": ["application/json; charset=utf-8"],
+        "date": ["Mon, 29 Aug 2022 07:57:58 GMT"],
+        "expect-ct": [
+          "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+        ],
+        "nel": [
+          "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+        ],
+        "referrer-policy": ["origin-when-cross-origin"],
+        "report-to": [
+          "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=28H3HKUqZB9CtLABUro3XRgEM0yjPhmaQPwhnFA%2FVdfr2dxhaqxrANE23pGeG4KN3AT2AfqGtjXJ4qYEdD1DKbdgjUNO98sGFpcBStn6%2FNW6NcQ6x4rFZEcebR%2FO9aX5njarrkE%2FKqA5pdYF9uPGDLAkCZq3eaQtlLs%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+        ],
+        "server": ["cloudflare"],
+        "strict-transport-security": ["max-age=7889238"],
+        "transfer-encoding": ["chunked"],
+        "x-content-type-options": ["nosniff"],
+        "x-dc": ["gcp-us-east4,gcp-us-east1,gcp-us-east1"],
+        "x-download-options": ["noopen"],
+        "x-frame-options": ["DENY"],
+        "x-permitted-cross-domain-policies": ["none"],
+        "x-request-id": ["ee801d25-1616-4003-8666-f6dba7e6fbd5"],
+        "x-shardid": ["158"],
+        "x-shopid": ["61852909727"],
+        "x-shopify-api-version": ["2022-04"],
+        "x-shopify-stage": ["production"],
+        "x-sorting-hat-podid": ["158"],
+        "x-sorting-hat-shopid": ["61852909727"],
+        "x-stats-apiclientid": ["5689442305"],
+        "x-stats-apipermissionid": ["397692436639"],
+        "x-stats-userid": ["80806510751"],
+        "x-xss-protection": [
+          "1; mode=block; report=/xss-report?source%5Baction%5D=query&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Fgraphql&source%5Bsection%5D=admin_api&source%5Buuid%5D=ee801d25-1616-4003-8666-f6dba7e6fbd5"
+        ]
+      },
+      "statusText": "Bad Request"
+    }
+  },
+  "Function": "TagGraphqlService.addTpfOrderIdTagSynced",
   "inputData": {
-    "ShopifyOrderRequest": {
-      "Billing": {
-        "Address1": "9 Elisa Ave",
-        "Address2": "",
-        "Attention": "John Pearce",
-        "CompanyName": "",
-        "Country": "Australia",
-        "Email": "kingjohn03@msn.com",
-        "Fax": "",
-        "FirstName": "John",
-        "LastName": "Pearce",
-        "Mobile": "",
-        "Phone": "+61416323781",
-        "Postcode": "4880",
-        "State": "Queensland",
-        "Suburb": "MAREEBA (QLD)"
-      },
-      "Contact": {
-        "Address1": "9 Elisa Ave",
-        "Address2": "",
-        "Attention": "John Pearce",
-        "CompanyName": "",
-        "Country": "Australia",
-        "Email": "kingjohn03@msn.com",
-        "FirstName": "John",
-        "LastName": "Pearce",
-        "Phone": "+61416323781",
-        "Postcode": "4880",
-        "State": "Queensland",
-        "Suburb": "MAREEBA (QLD)"
-      },
-      "Created": "2022-08-21T17:10:44+10:00",
-      "Currency": "AUD",
-      "Delivery": {
-        "Address1": "9 Elisa Ave",
-        "Address2": "",
-        "CompanyName": "",
-        "Country": "Australia",
-        "Email": "kingjohn03@msn.com",
-        "Fax": "",
-        "FirstName": "John",
-        "LastName": "Pearce",
-        "Mobile": "",
-        "Phone": "+61416323781",
-        "Postcode": "4880",
-        "State": "Queensland",
-        "Suburb": "MAREEBA (QLD)"
-      },
-      "DiscountAmount": 55.90909090909091,
-      "DiscountTax": 5.5909090909090935,
-      "DiscountTaxRate": 10,
-      "ExchangeRate": 1,
-      "FreightFee": 9,
-      "FreightTax": 0.9000000000000004,
-      "FreightTaxRate": 10,
-      "IsTest": false,
-      "Orderdetails": [
-        {
-          "InternalCode": "P000236566",
-          "IsFF_Item": false,
-          "Name": "Boost Mobile Racing Team Cap",
-          "Price": 31.818181818181817,
-          "PriceInTax": "35.00",
-          "ProType": 1,
-          "Qty": 1,
-          "Tax": 3.1818181818181834
-        },
-        {
-          "InternalCode": "P000225546",
-          "IsFF_Item": false,
-          "Name": "Holden Born To Race Lion Plush",
-          "Price": 27.27272727272727,
-          "PriceInTax": "30.00",
-          "ProType": 1,
-          "Qty": 1,
-          "Tax": 2.72727272727273
-        },
-        {
-          "InternalCode": "P000239856",
-          "IsFF_Item": false,
-          "Name": "Monster Energy Lanyard",
-          "Price": 9.09090909090909,
-          "PriceInTax": "10.00",
-          "ProType": 1,
-          "Qty": 1,
-          "Tax": 0.9090909090909101
-        }
-      ],
-      "PONumber": "S-MSO20001007",
-      "PaymentTransaction": {
-        "Amount": 23.4,
-        "Created": "2022-08-21T17:10:42+10:00",
-        "Currency": "AUD",
-        "Paid": true,
-        "PayDate": "2022-08-21T17:10:42+10:00",
-        "PaymentType": "Afterpay (New)",
-        "ResponseCode": "08",
-        "ResponseText": null,
-        "TxnReference": "ngRakBCvy0rIbCKvIAZoTDTlF"
-      },
-      "PaymentType": "Afterpay (New)",
-      "ShippingType": "Standard",
-      "Status": "PAID",
-      "Txnref": "ngRakBCvy0rIbCKvIAZoTDTlF"
-    },
-    "StoreToken": "FCD1F4E1-1A1A-4B03-BFC9-5BBA1C0B4678"
+    "orderShopifyId": "gid://shopify/Order/4915817087135",
+    "tagName": "Synced",
+    "tpfOrderId": 701119263
   }
 }

@@ -10,5 +10,13 @@ const get4LastCharactersM2  = ()=>{
     const n = 4;
     console.log(str.slice(-n));
 }
+
+const testTrim = ()=>{
+    const strTest = " 123  ";
+    console.log(strTest.length);
+    console.log(strTest.trim().length);
+}
+
 //get4LastCharacters();
-get4LastCharactersM2();
+//get4LastCharactersM2();
+testTrim();

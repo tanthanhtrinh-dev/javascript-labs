@@ -17,6 +17,9 @@ const testTrim = ()=>{
     console.log(strTest.trim().length);
 }
 
+const ex = () => {
+  
+}
 //get4LastCharacters();
 //get4LastCharactersM2();
-testTrim();
+//testTrim();

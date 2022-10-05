@@ -1,59 +1,34 @@
 {
-  "BreakPoint": "client.query",
-  "Error": {
-    "response": {
-      "body": { "errors": { "variables": "expected String to be a Hash" } },
-      "code": 400,
-      "headers": {
-        "alt-svc": ["h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"],
-        "cf-cache-status": ["DYNAMIC"],
-        "cf-ray": ["7423bd297a426ffe-IAD"],
-        "connection": ["close"],
-        "content-language": ["en"],
-        "content-security-policy": [
-          "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; frame-ancestors 'none'; img-src 'self' data: blob: https:; script-src https://cdn.shopify.com https://cdn.shopifycdn.net https://checkout.shopifycs.com https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://js.braintreegateway.com https://c.paypal.com https://maps.googleapis.com https://www.google-analytics.com https://v.shopify.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=query&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Fgraphql&source%5Bsection%5D=admin_api&source%5Buuid%5D=ee801d25-1616-4003-8666-f6dba7e6fbd5"
-        ],
-        "content-type": ["application/json; charset=utf-8"],
-        "date": ["Mon, 29 Aug 2022 07:57:58 GMT"],
-        "expect-ct": [
-          "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
-        ],
-        "nel": [
-          "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}"
-        ],
-        "referrer-policy": ["origin-when-cross-origin"],
-        "report-to": [
-          "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=28H3HKUqZB9CtLABUro3XRgEM0yjPhmaQPwhnFA%2FVdfr2dxhaqxrANE23pGeG4KN3AT2AfqGtjXJ4qYEdD1DKbdgjUNO98sGFpcBStn6%2FNW6NcQ6x4rFZEcebR%2FO9aX5njarrkE%2FKqA5pdYF9uPGDLAkCZq3eaQtlLs%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
-        ],
-        "server": ["cloudflare"],
-        "strict-transport-security": ["max-age=7889238"],
-        "transfer-encoding": ["chunked"],
-        "x-content-type-options": ["nosniff"],
-        "x-dc": ["gcp-us-east4,gcp-us-east1,gcp-us-east1"],
-        "x-download-options": ["noopen"],
-        "x-frame-options": ["DENY"],
-        "x-permitted-cross-domain-policies": ["none"],
-        "x-request-id": ["ee801d25-1616-4003-8666-f6dba7e6fbd5"],
-        "x-shardid": ["158"],
-        "x-shopid": ["61852909727"],
-        "x-shopify-api-version": ["2022-04"],
-        "x-shopify-stage": ["production"],
-        "x-sorting-hat-podid": ["158"],
-        "x-sorting-hat-shopid": ["61852909727"],
-        "x-stats-apiclientid": ["5689442305"],
-        "x-stats-apipermissionid": ["397692436639"],
-        "x-stats-userid": ["80806510751"],
-        "x-xss-protection": [
-          "1; mode=block; report=/xss-report?source%5Baction%5D=query&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Fgraphql&source%5Bsection%5D=admin_api&source%5Buuid%5D=ee801d25-1616-4003-8666-f6dba7e6fbd5"
-        ]
-      },
-      "statusText": "Bad Request"
-    }
+  "0": {
+    "name": "handing-fee",
+    "value": "Handling fee + $4.95"
   },
-  "Function": "TagGraphqlService.addTpfOrderIdTagSynced",
-  "inputData": {
-    "orderShopifyId": "gid://shopify/Order/4915817087135",
-    "tagName": "Synced",
-    "tpfOrderId": 701119263
+  "1": {
+    "name": "Membership_FirstName",
+    "value": "Min"
+  },
+  "2": {
+    "name": "Membership_LastName",
+    "value": "Nguyen"
+  },
+  "3": {
+    "name": "WH_Code",
+    "value": "SST8M822-P-001"
+  },
+  "4": {
+    "name": "Is_FF",
+    "value": "Is Fulfillment"
+  },
+  "5": {
+    "name": "2022 Platinum Ride Core Pack",
+    "value": "2022 Platinum Ride Core Pack"
+  },
+  "6": {
+    "name": "2022 Team polo",
+    "value": "Men's [S]"
+  },
+  "7": {
+    "name": "_gpo_product_group",
+    "value": 1664866018981
   }
 }

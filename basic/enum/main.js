@@ -48,4 +48,4 @@ const getSyncStatusByVal = (val) => {
     }
 }
 
- console.log(getSyncStatusByVal(SyncStatus));
+ console.log(getSyncStatusByVal(SyncStatus.Sent));

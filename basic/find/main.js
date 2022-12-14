@@ -16,3 +16,5 @@ const hosting = shopifyDomain.find(f=>f.host.includes("myshopify.com"));
 console.log(hosting);
 
 console.log(hosting.host);
+
+

@@ -15,4 +15,8 @@ const basicJoin = ()=>{
 
     console.log(elements.join('-'));
     // expected output: "Fire-Air-Water"
+
+    console.log(elements.join(' OR '));
 }
+
+basicJoin();

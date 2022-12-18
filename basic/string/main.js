@@ -23,3 +23,5 @@ const ex = () => {
 //get4LastCharacters();
 //get4LastCharactersM2();
 //testTrim();
+
+console.log('')

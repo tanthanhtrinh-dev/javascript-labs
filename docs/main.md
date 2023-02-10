@@ -1,4 +1,5 @@
 # Learning Javascript Basic
 
-# Ref
-- `https://javascript.info/`
+## Reference
+- `https://javascript.info`
+- `https://developer.mozilla.org/en-US/docs/Web/JavaScript`

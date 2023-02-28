@@ -29,14 +29,11 @@ const arrProperties = [
     }
 ];
 const basicMap = ()=>{
-
     const elements = ['Fire', 'Air', 'Water'];
-
     console.log(elements.map(m=>`name: '${m}'`).join(' OR '))
 }
 
 const basicMap2 = ()=>{
-
     console.log(arrProperties.map(m=>m.name))
 }
 

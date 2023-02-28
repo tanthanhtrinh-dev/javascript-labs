@@ -55,9 +55,7 @@ const example2Reduce = () => {
 
     const totalPoint = orders.reduce(
         (total,order )=>{
-
             console.log(step);
-
             return total+order.point;
         });
     console.log(totalPoint);

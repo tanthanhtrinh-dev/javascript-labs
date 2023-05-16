@@ -1,4 +1,3 @@
-
 /**
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
  *
@@ -16,3 +15,6 @@ console.log(b);
 
 console.log(rest);
 // expected output: Array [30,40,50]
+
+[payment1] = ['paypal', 'bogus', 'shopify_payment'];
+console.log({ payment1 });

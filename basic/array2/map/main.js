@@ -34,7 +34,21 @@ const basicMap = ()=>{
 }
 
 const basicMap2 = ()=>{
-    console.log(arrProperties.map(m=>m.name))
+    console.table(arrProperties.map(m=>({
+        nameNew: m.name,
+        val: m.value
+    })));
+}
+
+const basicMap3 = ()=>{
+    let arrNew = [];
+
+    arrNew = [...arrProperties.map(m=>({
+        nameNew: m.name,
+        val: m.value
+    }))]
+
+    console.table(arrNew);
 }
 
 //basicMap();

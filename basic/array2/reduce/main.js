@@ -44,7 +44,7 @@ const orders = [{name: "a", point: 5}, {name: "b", point: 2}, {name: "c", point:
 const example2Reduce = () => {
     //const orders = [{name: "a", point: 5}, {name: "b", point: 2}, {name: "c", point: 3}];
     const totalPoint = orders.reduce(
-        (total,order )=>{return total+order.point}
+        (total,order )=>{return (total+order.point).toFixed(2);}
         ,0);
     console.log(totalPoint);
 };

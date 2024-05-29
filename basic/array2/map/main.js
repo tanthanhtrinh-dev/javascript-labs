@@ -71,4 +71,4 @@ const discount_codes = [
   },
 ];
 
-console.log(discount_codes.map((m) => m.code).toString());
+console.log(discount_codes.map((m) => ({code: m.code, amount: m.amount})));

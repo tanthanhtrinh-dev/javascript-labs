@@ -22,3 +22,9 @@ const buildQueryTagsName = (preVal, currentVal, index) => {
 
 //const queryTags = languages.reduce(buildQueryTagsName, '');
 //console.log(queryTags);
+
+let shopifyOrderIDs = ["gid://shopify/Order/6124834783396", "gid://shopify/Order/6124834783397"];
+
+const orderIDs = shopifyOrderIDs.map(m => m.replace("gid://shopify/Order/", ""));
+
+console.log(orderIDs);

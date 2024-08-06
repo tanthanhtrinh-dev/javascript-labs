@@ -82,6 +82,48 @@ const discounts = [
             }
         },
         "discount_application_index" : 2
+    },
+    {
+        "amount" : "33.00",
+        "amount_set" : {
+            "shop_money" : {
+                "amount" : "33.00",
+                "currency_code" : "AUD"
+            },
+            "presentment_money" : {
+                "amount" : "33.00",
+                "currency_code" : "AUD"
+            }
+        },
+        "discount_application_index" : 3
+    },
+    {
+        "amount" : "20.00",
+        "amount_set" : {
+            "shop_money" : {
+                "amount" : "20.00",
+                "currency_code" : "AUD"
+            },
+            "presentment_money" : {
+                "amount" : "20.00",
+                "currency_code" : "AUD"
+            }
+        },
+        "discount_application_index" : 3
+    },
+    {
+        "amount" : "20.00",
+        "amount_set" : {
+            "shop_money" : {
+                "amount" : "20.00",
+                "currency_code" : "AUD"
+            },
+            "presentment_money" : {
+                "amount" : "20.00",
+                "currency_code" : "AUD"
+            }
+        },
+        "discount_application_index" : 4
     }
 ];
 
@@ -124,13 +166,22 @@ const discount_applications = [
     },
     {
         "target_type" : "line_item",
-        "type" : "automatic",
-        "value" : "50.0",
+        "type" : "discount_code",
+        "value" : "30.0",
+        "value_type" : "percentage",
+        "allocation_method" : "each",
+        "target_selection" : "entitled",
+        "code" : "TESTDISCOUNT2"
+    },
+    {
+        "target_type" : "line_item",
+        "type" : "discount_code",
+        "value" : "20.0",
         "value_type" : "fixed_amount",
         "allocation_method" : "across",
-        "target_selection" : "all",
-        "title" : "Test automatic order discount"
-    },
+        "target_selection" : "entitled",
+        "code" : "TESTDISCOUNT4"
+    }
 ];
 
 let indexAppli = discount_applications.findIndex((num, idx, arr) => {
@@ -144,31 +195,23 @@ let indexAppli = discount_applications.findIndex((num, idx, arr) => {
 let discountItems = discounts.map(m=>({
     amount: m.amount,
     discount_application: discount_applications[m.discount_application_index],
-})).filter(f=>f.discount_application.target_type === "line_item" && f.discount_application.target_selection==="all");
+})).filter(f=>f.discount_application.target_type === "line_item");
 
+
+let discountList = discount_applications.filter(f=>f.target_type==="line_item").map((m, index)=>({
+    amount: discounts.filter(f=>f.discount_application_index === index).reduce((total, item, currentIndex)=>{
+        if(item?.amount_set?.shop_money?.amount)
+        {
+            return (total + Number.parseFloat(item?.amount_set?.shop_money?.amount));
+        }        
+    }, 0.0),
+    name: m.title ?? `${m.code}`,
+}));
 
 //console.log(discountItems);
 
-let totalDiscount = discountItems.reduce((total, item)=>{
-    return (total + Number.parseFloat(item.amount));
-}, 0.0);
+// let totalDiscount = discountItems.reduce((total, item)=>{
+//     return (total + Number.parseFloat(item.amount));
+// }, 0.0);
 
-console.log(totalDiscount);
-
-const discount_codes = [
-    {
-        "code" : "TESTDISCOUNT3",
-        "amount" : "41.20",
-        "type" : "percentage"
-    },
-    {
-        "code" : "TESTDISCOUNT2",
-        "amount" : "9.00",
-        "type" : "percentage"
-    },
-    {
-        "code" : "TESTFREESHIP",
-        "amount" : "20.00",
-        "type" : "shipping"
-    }
-];
+// console.log(totalDiscount);

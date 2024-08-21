@@ -7,5 +7,9 @@ let m = {
     weight: undefined,
 }
 
-console.log(Number.parseFloat(m?.weight || 0.0))
-console.log(Number.parseFloat(m?.weight ?? 0.0));
+//console.log(Number.parseFloat(m?.weight || 0.0))
+//console.log(Number.parseFloat(m?.weight ?? 0.0));
+
+
+const isLog = Boolean("FALSE");
+console.log(isLog);

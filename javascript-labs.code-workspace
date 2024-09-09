@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../git-labs"
+		},
+		{
+			"path": "../docker-labs"
+		},
+		{
+			"path": "../markdown-labs"
+		},
+		{
+			"path": "../typescript-labs"
+		},
+		{
+			"path": "../angular-labs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "angular-labs"
+	}
+}

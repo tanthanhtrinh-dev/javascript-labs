@@ -1,11 +1,12 @@
 # [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
 > The instanceof operator tests to see if the `prototype` property of a constructor appears anywhere in the prototype chain of an object. The return value is a boolean value. Its behavior can be customized with `Symbol.hasInstance`.
 
-**Syntax**
+### **Syntax**
 ```javascript
 object instanceof constructor
 ```
-**Examples**
+
+### **Examples**
 ```javascript
 function Car(make, model, year) {
   this.make = make;
@@ -19,10 +20,9 @@ console.log(auto instanceof Car);
 
 console.log(auto instanceof Object);
 // Expected output: true
-
 ```
 
-## Description
+### Description
 ```javascript
 // defining constructors
 function C() {}

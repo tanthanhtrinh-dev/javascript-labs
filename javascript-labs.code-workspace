@@ -17,6 +17,12 @@
 		},
 		{
 			"path": "../angular-labs"
+		},
+		{
+			"path": "../ai-labs"
+		},
+		{
+			"path": "../powershell-labs"
 		}
 	],
 	"settings": {

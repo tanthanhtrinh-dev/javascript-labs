@@ -15,3 +15,9 @@
 //const colors = ['red', 'green', 'blue'];
 
 // Destructuring assignment
+
+const string4 = new String("A String object");
+
+console.log(string4);
+console.log(eval(string4))
+

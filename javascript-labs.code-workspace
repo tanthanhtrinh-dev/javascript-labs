@@ -23,6 +23,9 @@
 		},
 		{
 			"path": "../powershell-labs"
+		},
+		{
+			"path": "../css-labs"
 		}
 	],
 	"settings": {

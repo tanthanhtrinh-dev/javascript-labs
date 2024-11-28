@@ -10,9 +10,18 @@ engines: {
  }
 ```
 **For examples**
+- _Examples 01_
 ```json
   "engines" : { 
     "npm" : ">=8.0.0 <9.0.0",
     "node" : ">=16.0.0 <17.0.0"
   }
+```
+
+- _Examples 02_
+```json
+  "engines": {
+    "npm": ">=5.6.0 <9.0.0",
+    "node": ">=18.0.0 <20.0.0"
+  },
 ```

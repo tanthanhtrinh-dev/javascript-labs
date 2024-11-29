@@ -1,8 +1,10 @@
-import validator from 'validator';
 
-console.log("Hello world!!");
-const emailValidator = validator.isEmail('foo@bar.com');
+import {AdvancedValidation, SampleValidation} from './validator/index.js'
 
-console.log(emailValidator);
+console.log("Kick off app");
+
+//console.log(`Sample validation: ${SampleValidation.validateEmail()}`);
+console.log(`Advanced Validation: ${AdvancedValidation.isInvalidEmail()}`);
 
 console.log("End App");
+

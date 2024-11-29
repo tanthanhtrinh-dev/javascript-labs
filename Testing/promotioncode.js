@@ -20,6 +20,7 @@ const discount_codes = [
         "type" : "shipping"
     }
 ];
+
 let discount_applications = [
     {
         "target_type" : "line_item",

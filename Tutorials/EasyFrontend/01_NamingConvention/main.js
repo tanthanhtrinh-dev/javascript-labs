@@ -7,6 +7,7 @@ let hasValidItem = true;
 let isSelected = false;
 let show = false;
 let hasPositiveNumber = false;
+
 // single noun
 const student = {
   name: 'Easy Frontend',
@@ -15,3 +16,4 @@ const student = {
 const students = [].map(student => console.log(student.name)); // OK
 const studentList = [].map(student => console.log(student.name)); // GOOD
 
+console.table(students);

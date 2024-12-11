@@ -21,3 +21,6 @@ const string4 = new String("A String object");
 console.log(string4);
 console.log(eval(string4))
 
+const strBool = "true";
+
+console.log(Boolean.);

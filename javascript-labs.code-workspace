@@ -29,6 +29,9 @@
 		},
 		{
 			"path": "../aws-labs"
+		},
+		{
+			"path": "../mongodb-labs"
 		}
 	],
 	"settings": {

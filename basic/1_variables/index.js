@@ -1,6 +1,10 @@
 let a = b = 0.2;
 
-//console.info(a +"_"+ b);
+console.info(a +"_"+ b);
+
+a = 0.3;
+
+console.info(a +"_"+ b);
 
 let m = {
     stock: 0,

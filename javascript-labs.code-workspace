@@ -32,6 +32,12 @@
 		},
 		{
 			"path": "../mongodb-labs"
+		},
+		{
+			"path": "../pattern-labs"
+		},
+		{
+			"path": "../shopify-labs"
 		}
 	],
 	"settings": {

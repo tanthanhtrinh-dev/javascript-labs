@@ -38,6 +38,9 @@
 		},
 		{
 			"path": "../shopify-labs"
+		},
+		{
+			"path": "../rxjs-labs"
 		}
 	],
 	"settings": {

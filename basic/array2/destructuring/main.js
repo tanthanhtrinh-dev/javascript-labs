@@ -18,3 +18,6 @@ console.log(rest);
 
 [payment1] = ['paypal', 'bogus', 'shopify_payment'];
 console.log({ payment1 });
+
+
+let _aggregate = [];

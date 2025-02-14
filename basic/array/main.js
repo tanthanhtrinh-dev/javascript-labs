@@ -4,8 +4,7 @@
  */
 
 const languages = ['javascript', 'php', 'ruby'];
-
-console.log(languages.length);
+//console.log(languages.length);
 //console.log(languages);
 let previousValue = '';
 let step = 0;
